@@ -1,0 +1,283 @@
+/*Cor de fundo do header*/
+
+/* Styles according to the design sheet */
+:root {
+    /* Color imports */
+    --primary-color: #23a6f0;
+    --secondary-color-1: #23856d;
+    --dark-background-color: #252b42;
+    --light-background-color: #ffffff;
+    --muted-color: #bdbdbd;
+    --light-gray-1: #fafafa;
+    --primary-text-color: #23a6f0;
+    --text-color: #252b42;
+    --second-text-color: #737373;
+    --light-text-color: #ffffff;
+    --hover-text-color: #2a7cc7;
+  }
+  
+  h1 {
+    font-size: 58px;
+    font-family: Montserrat;
+    font-weight: 800;
+    line-height: 80px;
+  }
+  
+  h2 {
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 57px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  
+  h5 {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .btn-text {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  
+  .mobile-menu {
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 45px;
+  }
+  
+  p {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  
+  .list {
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  a {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  
+  /* PAGE CSS START */
+  
+  /* Header Section */
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--light-background-color);
+    margin-block-end: 100px;
+  }
+  
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+  }
+  
+  .top-menu a {
+    font-size: 2rem;
+    display: inline-flex;
+    padding: 4px;
+  }
+  
+  .ham-menu-expanded {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .ham-menu-expanded a {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: inherit;
+    color: var(--second-text-color);
+  }
+  
+  .hero {
+    background-image: linear-gradient(to right, #96e9fb, #abecd6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 3.2%;
+    gap: 100px;
+    padding-block-start: 80px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+    padding: 0 60px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .hero h4 {
+    color: var(--second-text-color);
+    font-weight: 400;
+  }
+  
+  .hero h5 {
+    color: #2a7cc7;
+  }
+  
+  .btn {
+    padding: 15px 40px;
+    border-radius: 5px;
+    width: fit-content;
+  }
+  
+  .btn-primary {
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 32px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+  }
+  
+  .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    color: var(--second-text-color);
+    font-size: 150px;
+    padding: 160px 0;
+  }
+  
+  .products-top-week {
+    display: grid;
+    padding: 25px 35px;
+  }
+  
+  /* PAGE CSS END */
+  
+  /* OVERRIDES */
+  /* Fixing layout shift from iconify */
+  .iconify-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    display: inline-flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  /* Reset default styles */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Montserrat;
+    color: var(--text-color);
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  /* Make images easier to work with */
+  img,
+  picture,
+  video {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Remove default button styles */
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Forms */
+  input,
+  textarea {
+    border: none;
+    outline: none;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .footer {
+    --primary-color: #23A6F0;
+    --text-color: #252B42;
+    --second-text-color: #737373;
+    --light-text-color: #FFFFFF;
+}
+
+.footer  {
+  background: white;
+  text-align: center;
+}
